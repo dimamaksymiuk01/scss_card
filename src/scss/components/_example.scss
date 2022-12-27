@@ -1,113 +1,38 @@
 body {
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
   font-family: 'Open Sans', sans-serif;
-
 }
 .wrapper {
   flex-direction: column;
   display: flex;
   .container {
-    width: 100%;
-    max-width: 1240px;
-    height: 1800px;
+    width: $widhmax;
+    max-width: $maxwidhmax;
+    height: $heidth;
     align-self: center;
     position: relative;
     overflow: hidden; 
-    background-color: rgb(0, 0, 0);
-    border: 1px solid;
     justify-content: center;
   }
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
 }
 .boxone {
-  @include baseflex;
-  @include boxmin;
-  .imagine {
-    background-color: #BCD1FF; 
-    @include imaginemin;
-    img {
-      @include imgmin;
-    }
-  }
-  .text {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 10px;
-    span:nth-child(1) {
-      color: rgba(0, 0, 0, 0.616);
-      font-size: 13px;
-    }
-    span:nth-child(2) {
-      color: rgba(0, 0, 0, 0.616);
-      font-size: 13px;
-      padding-left: 83px;
-    }
-    p {
-      margin-top: 25px;
-      font-size: 20px;
-      font-weight: bold;
-      color: rgb(4, 4, 44);
-    }
-  }
+  @include boxonemini;
+  @include boxonenormal;
+  @include boxonemax;
 }
+
 .boxtwo {
-  @include baseflex;
-  @include boxmin;
-  .imagine {
-    background: linear-gradient(135deg, #F395BA 0%, #FED182 100%);
-    @include imaginemin;
-    img {
-      @include imgmin;
-    }
-  }
-  .text {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 10px;
-    span:nth-child(1) {
-      color: rgba(0, 0, 0, 0.616);
-      font-size: 13px;
-    }
-    span:nth-child(2) {
-      color: rgba(0, 0, 0, 0.616);
-      font-size: 13px;
-      padding-left: 83px;
-    }
-    p {
-      margin-top: 25px;
-      font-size: 20px;
-      font-weight: bold;
-      color: rgb(4, 4, 44);
-    }
-  }
+  @include boxtwomini;
+  @include boxtwonormal;
+  @include boxtwomax;
 }
 .boxthree {
-  @include baseflex;
-  @include boxmin;
-  .imagine{
-    background: linear-gradient(0deg, #BCD1FF, #BCD1FF),linear-gradient(0deg, #D2EBF7, #D2EBF7);
-    @include imaginemin;
-    img {
-      @include imgmin;
-    }
-  }
-  .text {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 10px;
-    span:nth-child(1) {
-      color: rgba(0, 0, 0, 0.616);
-      font-size: 13px;
-    }
-    span:nth-child(2) {
-      color: rgba(0, 0, 0, 0.616);
-      font-size: 13px;
-      padding-left: 83px;
-    }
-    p {
-      margin-top: 25px;
-      font-size: 20px;
-      font-weight: bold;
-      color: rgb(4, 4, 44);
-    }
-  }
+  @include boxthreemini;
+  @include boxthreenormal;
+  @include boxthreemax;
 }

@@ -1,18 +1,622 @@
-@mixin boxmin {
+@mixin boxonemax {
+  @media screen and (min-width: 1280px) {
+  margin-top: 50px;
+  width: 1002px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: beige;
+  .imagine {
+    width: 400px;
+    height: 400px;
+    background: $cardcolorone;
+    border-radius: 30px;
+    img {
+      margin-left: 100px;
+      margin-top: 70px;    
+      width: 240px;
+      height: 240px;
+    }
+  }
+  .box {
+    width: 572px;
+    padding-left: 25px;
+    .text {
+      padding-top: 20px;
+      span:nth-child(1) {
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.55);
+      } 
+      span:nth-child(2) {
+        font-size: 17px;
+        margin-left: 240px;
+        color: rgba(0, 0, 0, 0.55);
+      } 
+      p:nth-child(3) {
+        font-size: 37px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+      } 
+      p:nth-child(4) {
+        padding-left: 15px;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+      } 
+    }
+    .avatar {
+      width: $widhmax;
+      padding-top: 45px;
+      padding-left: 15px;
+      img {
+        width: 44px;
+        height: 44px;
+      }
+      display: flex;
+      align-items: center;
+      span:nth-child(2) {
+        color: $colorblue;
+        font-size: 15px;
+        padding-left: 10px;
+      }
+      span:nth-child(3) {
+        font-size: 15px;
+        color: $colorblue;
+        padding-left: 270px;
+      }
+    }
+  }
+}
+
+
+}
+@mixin boxtwomax {
+  @media screen and (min-width: 1280px) {
+  margin-top: 50px;
+  width: 1002px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: beige;
+  .imagine {
+    width: 400px;
+    height: 400px;
+    background: $gradient;
+    border-radius: 30px;
+    img {
+      margin-left: 85px;
+      margin-top: 70px;   
+      width: 240px;
+      height: 240px; 
+    }
+  }
+  .box {
+    padding-left: 25px;
+    width: $widhmax;    
+    .text {
+      padding-top: 20px;
+      span:nth-child(1) {
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.55);
+      } 
+      span:nth-child(2) {
+        font-size: 17px;
+        margin-left: 280px;
+        color: rgba(0, 0, 0, 0.55);
+      } 
+      p:nth-child(3) {
+        font-size: 37px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+      } 
+      p:nth-child(4) {
+        padding-left: 15px;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+      } 
+    }
+    .avatar {
+      width: $widhmax;
+      padding-top: 65px;
+      padding-left: 15px;
+      img {
+        width: 44px;
+        height: 44px;
+      }
+      display: flex;
+      align-items: center;
+      span:nth-child(2) {
+        color: $colorblue;
+        font-size: 15px;
+        padding-left: 10px;
+      }
+      span:nth-child(3) {
+        font-size: 15px;
+        color: $colorblue;
+        padding-left: 270px;
+      }
+    }
+  }
+}
+}  
+
+
+@mixin boxthreemax {
+  @media screen and (min-width: 1280px) {
+  margin-top: 50px;
+  width: 1002px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: beige;
+  .imagine {
+    width: 400px;
+    height: 400px;
+    background: $cardcolortwo;
+    border-radius: 30px;
+    img {
+      margin-left: 70px;
+      margin-top: 70px;   
+      width: 240px;
+      height: 240px; 
+    }
+  }
+  .box {
+    width: 572px;
+    padding-left: 25px;
+    .text {
+      padding-top: 20px;
+      span:nth-child(1) {
+        font-size: 17px;
+        color: rgba(0, 0, 0, 0.55);
+      } 
+      span:nth-child(2) {
+        font-size: 17px;
+        margin-left: 240px;
+        color: rgba(0, 0, 0, 0.55);
+      } 
+      p:nth-child(3) {
+        font-size: 37px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+      } 
+      p:nth-child(4) {
+        padding-left: 15px;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+      } 
+    }
+    .avatar {
+      max-width: $widhmax;
+      padding-top: 25px;
+      padding-left: 15px;
+      img {
+        width: 44px;
+        height: 44px;
+      }
+      display: flex;
+      align-items: center;
+      span:nth-child(2) {
+        color: $colorblue;
+        font-size: 15px;
+        padding-left: 10px;
+      }
+      span:nth-child(3) {
+        font-size: 15px;
+        color: $colorblue;
+        padding-left: 270px;
+      }
+    }
+  }
+}
+}
+
+
+
+
+
+
+@mixin boxonenormal {
+  @media screen and (min-width: 768px) {
+  margin-top: 50px;
+  width: 318px;
+  height: 400px;
+  flex-wrap: wrap;
+  .imagine {
+    width: 318px;
+    height: 168px;
+    background: $cardcolorone;
+    border-radius: 30px;
+    img {
+      width: 120px;
+      height: 120px;
+      margin-left: 100px;
+      margin-top: 25px;    
+    }
+  }
+  .box {
+    padding-bottom: 40px;
+    max-width: 572px;
+    padding-left: 5px;
+    .text {
+      padding-top: 5px;
+      span:nth-child(1) {
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.703);
+      } 
+      span:nth-child(2) {
+        font-size: 13px;
+        margin-left: 50px;
+        color: rgba(0, 0, 0, 0.703);
+      } 
+      p:nth-child(3) {
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+      } 
+      p:nth-child(4) {
+        font-size: 11px;
+        padding-right: 20px;
+        padding-left: 15px;
+        color: rgb(0, 0, 0);
+      } 
+    }
+    .avatar {
+      width: $widhmax;
+      padding-top: 23px;
+      padding-left: 15px;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+      display: flex;
+      align-items: center;
+      span:nth-child(2) {
+        color: $colorblue;
+        font-size: 13px;
+        padding-left: 10px;
+      }
+      span:nth-child(3) {
+        font-size: 13px;
+        color: $colorblue;
+        padding-left: 80px;
+      }
+    }
+  }
+}
+}
+
+
+@mixin boxtwonormal {
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    width: 318px;
+    height: 400px;
+    flex-wrap: wrap;
+    .imagine {
+      width: 318px;
+      height: 168px;
+      background: $gradient;
+      border-radius: 30px;
+      img {
+        width: 120px;
+        height: 120px;
+        margin-left: 100px;
+        margin-top: 25px;    
+      }
+    }
+    .box {
+      max-width: 572px;
+      padding-left: 5px;
+      padding-bottom: 50px;
+      .text {
+        padding-top: 5px;
+        span:nth-child(1) {
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        span:nth-child(2) {
+          font-size: 13px;
+          margin-left: 75px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        p:nth-child(3) {
+          font-size: 18px;
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+        } 
+        p:nth-child(4) {
+          font-size: 11px;
+          padding-right: 20px;
+          padding-left: 15px;
+          color: rgb(0, 0, 0);
+        } 
+      }
+      .avatar {
+        width: $widhmax;
+        padding-top: 30px;
+        padding-left: 15px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+        display: flex;
+        align-items: center;
+        span:nth-child(2) {
+          color: $colorblue;
+          font-size: 13px;
+          padding-left: 10px;
+        }
+        span:nth-child(3) {
+          font-size: 13px;
+          color: $colorblue;
+          padding-left: 80px;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin boxthreenormal {
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+    width: 318px;
+    height: 400px;
+    flex-wrap: wrap;
+    .imagine {
+      width: 318px;
+      height: 168px;
+      background: $cardcolortwo;
+      border-radius: 30px;
+      img {
+        width: 120px;
+        height: 120px;
+        margin-left: 100px;
+        margin-top: 25px;    
+      }
+    }
+    .box {
+      padding-bottom: 40px;
+      max-width: 572px;
+      padding-left: 5px;
+      .text {
+        padding-top: 15px;
+        span:nth-child(1) {
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        span:nth-child(2) {
+          font-size: 13px;
+          margin-left: 50px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        p:nth-child(3) {
+          font-size: 18px;
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+        } 
+        p:nth-child(4) {
+          font-size: 11px;
+          padding-right: 20px;
+          padding-left: 15px;
+          color: rgb(0, 0, 0);
+        } 
+      }
+      .avatar {
+        padding-bottom: 25px;
+        max-width: $widhmax;
+        padding-left: 15px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+        display: flex;
+        align-items: center;
+        span:nth-child(2) {
+          color: $colorblue;
+          font-size: 13px;
+          padding-left: 10px;
+        }
+        span:nth-child(3) {
+          font-size: 13px;
+          color: $colorblue;
+          padding-left: 80px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@mixin boxonemini {
+  @media screen and (min-width: 375px) {
+    margin-top: 50px;
+    display: flex;
     width: 400px;
     height: 128px;
+    flex-wrap: wrap;
+    .imagine {
+      width: 128px;
+      height: 128px;
+      background: $cardcolorone;
+      border-radius: 30px;
+      img {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+        margin-top: 25px;    
+      }
+    }
+    .box {
+      max-width: 245px;
+      .text {
+        padding-top: 20px;
+        span:nth-child(1) {
+          padding-left: 15px;
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        span:nth-child(2) {
+          padding-left: 55px;
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        p:nth-child(3) {
+          padding-top: 5px;
+          padding-left: 15px;
+          font-size: 17px;
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+        } 
+        p:nth-child(4) {
+          font-size: 0px;
+        } 
+      }
+      .avatar {
+        position: absolute;
+        width: 1px;
+        height: 0px;
+        img {
+          width: 0px;
+          height: 0px;  
+        }
+        span:nth-child(2) {
+          font-size: 0px;
+        }
+        span:nth-child(3) {
+          font-size: 0px;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin boxtwomini {
+  @media screen and (min-width: 375px) {
+    margin-top: 50px;
     display: flex;
-    background-color: white;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-  @mixin imaginemin {
-    width: 128px;
+    width: 400px;
     height: 128px;
-    border-radius: 20px;
+    flex-wrap: wrap;
+    .imagine {
+      width: 128px;
+      height: 128px;
+      background: $gradient;
+      border-radius: 30px;
+      img {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+        margin-top: 25px;    
+      }
+    }
+    .box {
+      max-width: 245px;
+      .text {
+        padding-top: 20px;
+        span:nth-child(1) {
+          padding-left: 15px;
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        span:nth-child(2) {
+          padding-left: 85px;
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        p:nth-child(3) {
+          padding-top: 5px;
+          padding-left: 15px;
+          font-size: 17px;
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+        } 
+        p:nth-child(4) {
+          font-size: 0px;
+        } 
+      }
+      .avatar {
+        position: absolute;
+        width: 1px;
+        height: 0px;
+        img {
+          width: 0px;
+          height: 0px;  
+        }
+        span:nth-child(2) {
+          font-size: 0px;
+        }
+        span:nth-child(3) {
+          font-size: 0px;
+        }
+      }
+    }
   }
-  @mixin imgmin {
-    padding: 25px 25px 20px 22px;
-    width: 80px;
-    height: 80px;
+}
+
+
+@mixin boxthreemini {
+  @media screen and (min-width: 375px) {
+    margin-top: 50px;
+    display: flex;
+    width: 400px;
+    height: 128px;
+    flex-wrap: wrap;
+    .imagine {
+      width: 128px;
+      height: 128px;
+      background: $cardcolortwo;            
+      border-radius: 30px;
+      img {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-top: 25px;    
+      }
+    }
+    .box {
+      max-width: 245px;
+      .text {
+        padding-top: 20px;
+        span:nth-child(1) {
+          padding-left: 15px;
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        span:nth-child(2) {
+          padding-left: 75px;
+          font-size: 13px;
+          color: rgba(0, 0, 0, 0.703);
+        } 
+        p:nth-child(3) {
+          padding-top: 5px;
+          padding-left: 15px;
+          font-size: 17px;
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+        } 
+        p:nth-child(4) {
+          font-size: 0px;
+        } 
+      }
+      .avatar {
+        position: absolute;
+        max-width: 0px;
+        img {
+          width: 0px;
+          height: 0px;  
+        }
+        span:nth-child(2) {
+          font-size: 0px;
+        }
+        span:nth-child(3) {
+          font-size: 0px;
+        }
+      }
+    }
   }
+}
